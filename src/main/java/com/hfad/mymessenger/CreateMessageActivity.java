@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Toast;
 
 public class CreateMessageActivity extends AppCompatActivity {
 
@@ -17,5 +18,7 @@ public class CreateMessageActivity extends AppCompatActivity {
     public void onSendMessage(View view) {
         Intent intent = new Intent(this, ReceiveMessageActivity.class);
         startActivity(intent);
+
+        Toast.makeText(this, "testing", Toast.LENGTH_SHORT).show();
     }
 }
